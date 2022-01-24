@@ -308,7 +308,7 @@ function showGameScoreLayer() {
             cookie('bast-score', bast, 100);
         }
     }
-    document.getElementById('GameScoreLayer-bast').innerHTML = '最佳&nbsp;&nbsp;' + bast;
+    document.getElementById('GameScoreLayer-bast').innerHTML = '年级最高分&nbsp;&nbsp;' + bast;
     l.style.display = 'block';
 }
 
@@ -335,11 +335,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '试着好好练一下？';
-    if (score <= 99) return 'TCL';
-    if (score <= 149) return 'TQL';
-    if (score <= 199) return '您';
-    return '人？';
+    if (score <= 49) return '为什么我这么菜？';
+    if (score <= 99) return '他屌，你屌，我菜';
+    if (score <= 149) return '这不得把我干碎吗';
+    if (score <= 199) return '我册封你们所有人为神';
+    return '我就是个大寄扒！！';
 }
 
 function toStr(obj) {
